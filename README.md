@@ -11,7 +11,7 @@ Hi! I'm an AI platform engineer who believes the best way to understand somethin
 
 ## 🏢 What I Build at Work
 
-- **Enterprise AI Gateway** — a unified API letting 100+ internal projects consume 60+ LLMs, embedding, and multimodal models, with auth, auto-routing, caching, load balancing, token-aware rate limiting, and guardrails at low latency.
+- **Enterprise AI Gateway** — a unified API letting 100+ internal projects consume 80+ LLMs, embedding, and multimodal models, with auth, auto-routing, caching, load balancing, token-aware rate limiting, and guardrails at low latency.
 - **Agent Hub** — a low-code platform to compose multi-agent teams with configurable routing (auto router, parallel, supervisor), MCP-scoped tools, and reasoning patterns (ReAct, Plan-and-Execute, Reflexion), plus a DeepEval-based evaluation, regression & A/B framework.
 - **GenAI Workflow Platform** — a React Flow + Next.js visual DAG builder for multi-step LLM pipelines (ingestion, RAG, report generation). Automated global screening ops.
 
