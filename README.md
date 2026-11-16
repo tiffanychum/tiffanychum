@@ -1,60 +1,93 @@
 # Hi, I'm Tiffany 👋
 
-Hi! I'm an AI platform engineer who believes the best way to understand something is to build it. I work end-to-end on production-grade GenAI systems — from polished React/Next.js interfaces to LLM orchestration, multi-agent workflows, and AI gateway infrastructure — and I'm happiest exploring new ideas, rapid prototyping, and turning emerging tech research into things that can ship and scale. ✨
+I build AI platforms by day and AI side quests by night.
 
-- 🔭 Building enterprise AI gateways, multi-agent platforms, and GenAI workflow tooling
-- 🤝 Open-source contributor to **[OpenClaw](https://github.com/openclaw/openclaw)** and **[DeepEval](https://github.com/confident-ai/deepeval)**
-- 🎮 Building side projects — an **SDLC multi-agent platform** and a **gamified DSA learning app**
-- 💬 Ask me about AI gateways, agentic frameworks, RAG, and LLM evaluation
+My rule: the best way to understand something is to build it. So when I wanted journaling to feel effortless and visual, I built an app. When I wanted a second opinion on stocks, I built a committee of AI analysts. When I wanted learning algorithms to feel like play, I built a game for it.
 
 ---
 
-## 🏢 What I Build at Work
+## 🚀 Side quests
 
-- **Enterprise AI Gateway** — a unified API letting 100+ internal projects consume 80+ LLMs, embedding, and multimodal models, with auth, auto-routing, caching, load balancing, token-aware rate limiting, and guardrails at low latency.
-- **Agent Hub** — a low-code platform to compose multi-agent teams with configurable routing (auto router, parallel, supervisor), MCP-scoped tools, and reasoning patterns (ReAct, Plan-and-Execute, Reflexion), plus a DeepEval-based evaluation, regression & A/B framework.
-- **GenAI Workflow Platform** — a React Flow + Next.js visual DAG builder for multi-step LLM pipelines (ingestion, RAG, report generation). Automated global screening ops.
+### 💼 [Financial Analysis Agent](https://github.com/tiffanychum/financial-analysis-agent)
+*A committee of AI analysts that lives in my WhatsApp.*
+
+I message my agent `analyze AAPL`, and about 10 minutes later a full research report arrives.
+
+- 🧮 **Formulas do the math, the LLM only interprets it.** Valuation models, quality scores and technical signals are deterministic and unit-tested.
+- 🪑 **Seven analyst seats** (fundamental, valuation, technical, sentiment, a Buffett lens, a Burry lens, macro) vote, and a citation check flags any number that isn't in the data.
+- 😈 **The trader has to argue against the majority first**, then three risk managers (aggressive, conservative, neutral) push back on its plan. An optional bull/bear debate can be switched on per run.
+- ⚖️ **Two judges plus an "ablation judge"** that decides without the fair-value estimate. If they disagree, confidence is capped.
+- 📉 It **scores its own past calls** against real prices and against plain monthly investing. My own backtest found the macro tilt *doesn't* predict returns, so the report says so.
+
+`Python` · `OpenClaw` · `SEC / FRED / Yahoo data` · `350+ unit tests`
+*Research only, not financial advice.*
+
+### 🎬 [Scène](https://tiffanychum.github.io/scene-legal/)
+*Turn your day into a movie, one line at a time.*
+
+Write one line about your day and get back a cinematic scene, a quote and a song that echo it. Over time your scenes collect into a film roll of your life. 🎞️
+
+- Built and shipped solo on iOS
+- Firebase + App Check on the backend
+- An agentic pipeline creates the weekly social posts and ads, so marketing is automated too 🤖
+
+`Swift` · `Firebase` · `Generative AI`
+
+### 🤖 [SDLC Agent](https://github.com/tiffanychum/sdlc-agent)
+*What if a whole dev team were agents?*
+
+Nine agents (PM, Planner, Coder, Reviewer, QA, DevOps, Researcher, Data Analyst, and a Prompt Optimizer that tunes the others' prompts) work together behind an LLM router.
+
+- Orchestration modes: router-decides, sequential, parallel, supervisor and auto
+- Human-in-the-loop checkpoints, a RAG pipeline and a visual workflow builder
+- DeepEval regression tests on golden datasets, plus prompt-drift detection
+- Full OpenTelemetry tracing with a live trace inspector 🔍
+
+`LangGraph` · `MCP` · `FastAPI` · `Next.js`
+
+### 🎯 [DSA Deliberate Play](https://github.com/tiffanychum/DSA_Deliberate_Play)
+*Practising data structures and algorithms, but make it a game.*
+
+- Algorithm visualiser with real-time animations synced to the Python code
+- Challenges across sorting, graphs, trees, DP, greedy and bitwise
+- XP, achievements and progress tracking (and dark mode, obviously 🌙)
+
+`Next.js` · `TypeScript`
 
 ---
 
-## 🚀 Personal Projects
+## 🌱 Open source
 
-### 🤖 SDLC Agent
-A full-stack **multi-agent platform** for automating software development workflows — **LangGraph · MCP · FastAPI · Next.js**.
-- Nine-role agent team (Coder, QA, DevOps, Researcher, Planner, Reviewer, PM, Data Analyst, Prompt Optimizer) behind an LLM router
-- Orchestration strategies: `router_decides`, `sequential`, `parallel`, `supervisor`, and `auto`
-- Human-in-the-Loop checkpoints, RAG pipeline, and a LangFlow-style visual workflow builder
-- DeepEval-powered evaluation, golden-dataset regression testing, prompt-drift detection, and a PromptOptimizer meta-agent
-- Full **OpenTelemetry** observability with a real-time trace inspector
+I like fixing the tools I actually use.
 
-### 🎯 DSA Deliberate Play
-A gamified **Next.js + TypeScript** web app that turns DSA practice into deliberate play.
-- Interactive algorithm visualizer with real-time animations + synced Python code highlighting
-- Gamified challenges across sorting, searching, graphs, linked lists, trees, DP, greedy & bitwise
-- XP rewards, progress tracking, achievements, and full dark mode
+- **[OpenClaw](https://github.com/openclaw/openclaw)**: merged a fix for Discord messages being silently dropped during gateway reconnects ([#100896](https://github.com/openclaw/openclaw/pull/100896)), plus Slack, memory and UI fixes. My financial agent runs on it, so I'm also a user.
+- **[DeepEval](https://github.com/confident-ai/deepeval)**: fixed missing token counts and costs for GPT-5.x in LLM tracing spans, with unit tests ([#2601](https://github.com/confident-ai/deepeval/pull/2601)). I use DeepEval for agent evaluation at work, which is how I found the bug 🐛
 
 ---
 
-## 🌱 Open Source
+## 🏢 By day
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)** — merged fix for Discord messages silently dropped during gateway reconnect ([#100896](https://github.com/openclaw/openclaw/pull/100896)), plus Slack, memory, and UI fixes
-- **[DeepEval](https://github.com/confident-ai/deepeval)** — fixed token-count & cost population for GPT-5.x in LLM tracing spans, with unit tests
+I'm an AI platform engineer working on enterprise GenAI infrastructure:
 
----
-
-## 🛠️ Tech Stack
-
-**AI & Agents:** AI Gateway · API & System Design · LLM Fine-Tuning (PyTorch) · Prompt Engineering · RAG · MCP · LangChain · LangGraph · DeepEval · Embeddings
-**Languages:** Python · TypeScript · Go · Lua · SQL
-**Frontend:** React.js · Next.js · Vue.js · React Native
-**Backend:** Microservices · REST APIs · Redis · PostgreSQL · DynamoDB · GCP Pub/Sub
-**Infra:** AWS · GCP · Azure · Kubernetes · Docker · Terraform · CI/CD · GitOps
+- **AI Gateway**: one API to 80+ LLM, embedding and multimodal models, with routing, caching, rate limiting and guardrails
+- **Agent Hub**: a low-code platform for building multi-agent teams, with built-in evaluation
+- **Agent sandbox**: isolated, ~100ms-to-start environments where agents can run untrusted code safely
 
 ---
 
-## 📫 Connect
+## 🧰 Tools I reach for
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-tiffanychum-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tiffanychum/)
-[![GitHub](https://img.shields.io/badge/GitHub-tiffanychum-181717?logo=github&logoColor=white)](https://github.com/tiffanychum)
+**AI:** LangGraph · LangChain · MCP · DeepEval · RAG · PyTorch fine-tuning
+**Languages:** Python · TypeScript · Go · Swift · SQL · Lua
+**Build:** React · Next.js · FastAPI · PostgreSQL · Redis · Firebase
+**Infra:** Kubernetes · Docker · Terraform · AWS · GCP · Azure
+
+---
+
+## 💬 Ask me about
+
+AI gateways · multi-agent design · LLM evaluation · why my AI stock committee argues with itself
+
+📫 [LinkedIn](https://www.linkedin.com/in/tiffanychum/)
 
 <!-- profile readme -->
