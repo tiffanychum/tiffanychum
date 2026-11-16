@@ -60,7 +60,11 @@ Nine agents (PM, Planner, Coder, Reviewer, QA, DevOps, Researcher, Data Analyst,
 
 I like fixing the tools I actually use.
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)**: merged a fix for Discord messages being silently dropped during gateway reconnects ([#100896](https://github.com/openclaw/openclaw/pull/100896)), plus Slack, memory and UI fixes. My financial agent runs on it, so I'm also a user.
+- **[OpenClaw](https://github.com/openclaw/openclaw)**: four fixes landed. My financial agent runs on it, so I'm also a user.
+  - Discord messages silently dropped during gateway reconnects ([#100896](https://github.com/openclaw/openclaw/pull/100896))
+  - Google Chat streaming settings lost when `doctor` migrates named accounts ([#106018](https://github.com/openclaw/openclaw/pull/106018))
+  - A websocket cache race on stale reused releases ([#105634](https://github.com/openclaw/openclaw/pull/105634))
+  - Control UI run status getting stuck on stale runs, landed by a maintainer as a co-authored rework ([#100527](https://github.com/openclaw/openclaw/pull/100527))
 - **[DeepEval](https://github.com/confident-ai/deepeval)**: fixed missing token counts and costs for GPT-5.x in LLM tracing spans, with unit tests ([#2601](https://github.com/confident-ai/deepeval/pull/2601)). I use DeepEval for agent evaluation at work, which is how I found the bug 🐛
 
 ---
