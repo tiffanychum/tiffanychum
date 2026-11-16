@@ -22,7 +22,7 @@ I message my agent `analyze AAPL`, and about 10 minutes later a full research re
 `Python` · `OpenClaw` · `SEC / FRED / Yahoo data` · `350+ unit tests`
 *Research only, not financial advice.*
 
-### 🎬 [Scène](https://tiffanychum.github.io/scene-legal/)
+### 🎬 [Scène](https://apps.apple.com/hk/app/sc%C3%A8ne-your-day-in-a-scene/id6792310884?l=en-GB)
 *Turn your day into a movie, one line at a time.*
 
 Write one line about your day and get back a cinematic scene, a quote and a song that echo it. Over time your scenes collect into a film roll of your life. 🎞️
